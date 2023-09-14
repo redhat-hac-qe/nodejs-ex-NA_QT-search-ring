@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-ex
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/hacdev/user1-tenant/nodejs-ex/nodejs-ex@sha256:90c2bab6fe7626d55d6f34bfeaaf6dde0cb5e447d14e526940a1ec3c7bdf3ad7
+        name: my-nodejs
+        resources: {}
+status: {}
